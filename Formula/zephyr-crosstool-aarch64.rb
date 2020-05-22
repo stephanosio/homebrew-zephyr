@@ -12,4 +12,42 @@ class ZephyrCrosstoolAarch64 < Formula
         (prefix).install Dir["./*"]
         Dir.glob(prefix/"aarch64-zephyr-elf/bin/*") { |file| bin.install_symlink file }
     end
+
+    test do
+      expected = "(zephyr-crosstool-NG 1.24.0.2)"
+
+      [
+          "addr2line",
+          "ar",
+          "as",
+          "c++",
+          "c++filt",
+          "cc",
+          "cpp",
+          "elfedit",
+          "g++",
+          "gcc",
+          "gcc-9.2.0",
+          "gcc-ar",
+          "gcc-nm",
+          "gcc-ranlib",
+          "gcov",
+          "gcov-dump",
+          "gcov-tool",
+          "gdb",
+          "gprof",
+          "ld",
+          "ld.bfd",
+          "nm",
+          "objcopy",
+          "objdump",
+          "ranlib",
+          "readelf",
+          "size",
+          "strings",
+          "strip"
+      ].each { |cmd|
+          assert_match expected, shell_output("#{bin}/aarch64-zephyr-elf-#{cmd} --version")
+      }
+    end
 end
