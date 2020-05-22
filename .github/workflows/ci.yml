@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  audit:
+    name: Audit
+    runs-on: macos-latest
+
+    steps:
+    - name: Check out source code
+      uses: actions/checkout@v2
+
+    - name: Audit formulae
+      run: |
+        for f in $(ls Formula/*.rb); do
+          brew audit $f
+        done
+
+  test:
+    name: Test on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os:
+        - macos-10.14
+        - macos-10.15
+
+    steps:
+    - name: Check out source code
+      uses: actions/checkout@v2
+
+    - name: Test formulae
+      run: |
+        for f in $(ls Formula/*.rb); do
+          brew install -v $f
+          brew test -v $f
+          brew uninstall $f
+        done
