@@ -5,7 +5,19 @@ pushd $(dirname $0) > /dev/null
 
 PACKAGES=" \
   zephyr-crosstool-aarch64,aarch64-zephyr-elf \
+  zephyr-crosstool-arc,arc-zephyr-elf \
   zephyr-crosstool-arm,arm-zephyr-eabi \
+  zephyr-crosstool-nios2,nios2-zephyr-elf \
+  zephyr-crosstool-riscv,riscv64-zephyr-elf \
+  zephyr-crosstool-sparc,sparc-zephyr-elf \
+  zephyr-crosstool-x86,x86_64-zephyr-elf \
+  zephyr-crosstool-xtensa-intel_apl_adsp,xtensa-intel_apl_adsp_zephyr-elf \
+  zephyr-crosstool-xtensa-intel_bdw_adsp,xtensa-intel_bdw_adsp_zephyr-elf \
+  zephyr-crosstool-xtensa-intel_byt_adsp,xtensa-intel_byt_adsp_zephyr-elf \
+  zephyr-crosstool-xtensa-intel_s1000,xtensa-intel_s1000_zephyr-elf \
+  zephyr-crosstool-xtensa-nxp_imx_adsp,xtensa-nxp_imx_adsp_zephyr-elf \
+  zephyr-crosstool-xtensa-nxp_imx8m_adsp,xtensa-nxp_imx8m_adsp_zephyr-elf \
+  zephyr-crosstool-xtensa-sample_controller,xtensa-sample_controller_zephyr-elf \
 "
 
 # Validate arguments
