@@ -6,8 +6,9 @@ class ZephyrCrosstoolSparc < Formula
   url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_sparc-zephyr-elf.tar.gz"
   version "1.24.0.4"
   sha256 "deed77f333d579c114fb876892c66d191a4fc33b0fc79c0d2cdd28bb36ce9c17"
-  revision 1
+  revision 2
 
+  depends_on "boost"
   depends_on "python"
   depends_on "xz"
 

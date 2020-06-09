@@ -6,8 +6,9 @@ class ZephyrCrosstoolX86 < Formula
   url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_x86_64-zephyr-elf.tar.gz"
   version "1.24.0.4"
   sha256 "4c6879034bf67724a1eb506c4e2c0f4f05a7a396316e9800294e053dde329392"
-  revision 1
+  revision 2
 
+  depends_on "boost"
   depends_on "python"
   depends_on "xz"
 

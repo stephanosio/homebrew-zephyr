@@ -6,8 +6,9 @@ class ZephyrCrosstoolXtensaNxpImx8mAdsp < Formula
   url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_xtensa-nxp_imx8m_adsp_zephyr-elf.tar.gz"
   version "1.24.0.4"
   sha256 "9f574e6675ecd5cec4b0ecd2acf78724bbc16b60c4acb3611055f0ee589c9458"
-  revision 1
+  revision 2
 
+  depends_on "boost"
   depends_on "python"
   depends_on "xz"
 

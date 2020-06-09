@@ -6,8 +6,9 @@ class ZephyrCrosstoolArc < Formula
   url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_arc-zephyr-elf.tar.gz"
   version "1.24.0.4"
   sha256 "1df19978721da57313c7393f2c38d6329c9a8737d443e0c0be292ea78c01116f"
-  revision 1
+  revision 2
 
+  depends_on "boost"
   depends_on "python"
   depends_on "xz"
 

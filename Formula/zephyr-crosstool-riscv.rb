@@ -6,8 +6,9 @@ class ZephyrCrosstoolRiscv < Formula
   url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_riscv64-zephyr-elf.tar.gz"
   version "1.24.0.4"
   sha256 "7a4b7d663ebe115e9acd6bacebb11039ae54d9ef58331fcabd8f1a59b3d0fbaf"
-  revision 1
+  revision 2
 
+  depends_on "boost"
   depends_on "python"
   depends_on "xz"
 

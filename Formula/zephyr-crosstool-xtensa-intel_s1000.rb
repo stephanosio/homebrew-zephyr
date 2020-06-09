@@ -6,8 +6,9 @@ class ZephyrCrosstoolXtensaIntelS1000 < Formula
   url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_xtensa-intel_s1000_zephyr-elf.tar.gz"
   version "1.24.0.4"
   sha256 "06411d378c706887ac18e9d694d9682503fd8e27d93bcaffcd431171f4dcc9cb"
-  revision 1
+  revision 2
 
+  depends_on "boost"
   depends_on "python"
   depends_on "xz"
 

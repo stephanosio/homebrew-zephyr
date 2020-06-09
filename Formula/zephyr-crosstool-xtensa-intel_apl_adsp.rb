@@ -6,8 +6,9 @@ class ZephyrCrosstoolXtensaIntelAplAdsp < Formula
   url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_xtensa-intel_apl_adsp_zephyr-elf.tar.gz"
   version "1.24.0.4"
   sha256 "866c23c6ca96d64431d59d2aaa1e1e2114e4c6360b64527dac4d5c8df4a5f261"
-  revision 1
+  revision 2
 
+  depends_on "boost"
   depends_on "python"
   depends_on "xz"
 

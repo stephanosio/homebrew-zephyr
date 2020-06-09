@@ -6,8 +6,9 @@ class ZephyrCrosstoolXtensaSampleController < Formula
   url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_xtensa-sample_controller_zephyr-elf.tar.gz"
   version "1.24.0.4"
   sha256 "e8ed8573bd432083be18e68b4e32f6e0dce1593429779acd5ae8180d0a118c37"
-  revision 1
+  revision 2
 
+  depends_on "boost"
   depends_on "python"
   depends_on "xz"
 
