@@ -73,6 +73,7 @@ for i in ${PACKAGES}; do
   sed -i -e "s/version \".*\"/version \"${VERSION}\"/g" "${FORMULA_FILE}"
   sed -i -e "s/sha256 \".*\"/sha256 \"${SOURCE_HASH}\"/g" "${FORMULA_FILE}"
   sed -i -e "s/expected = \"(zephyr-crosstool-NG .*)\"/expected = \"(zephyr-crosstool-NG ${VERSION})\"/g" "${FORMULA_FILE}"
+  sed -i -e "s/revision .*/revision 1/g" "${FORMULA_FILE}"
 
   echo
 done

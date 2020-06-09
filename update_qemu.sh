@@ -50,5 +50,6 @@ echo "  Updating formula ... "
 sed -i -e "s#url \".*\"#url \"${SOURCE_URL}\"#g" "${FORMULA_FILE}"
 sed -i -e "s/version \".*\"/version \"${VERSION}\"/g" "${FORMULA_FILE}"
 sed -i -e "s/sha256 \".*\"/sha256 \"${SOURCE_HASH}\"/g" "${FORMULA_FILE}"
+sed -i -e "s/revision .*/revision 1/g" "${FORMULA_FILE}"
 
 popd > /dev/null
