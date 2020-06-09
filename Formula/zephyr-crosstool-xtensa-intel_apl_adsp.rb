@@ -3,9 +3,9 @@ require "formula"
 class ZephyrCrosstoolXtensaIntelAplAdsp < Formula
   desc "Xtensa Cross Compiler Toolchain"
   homepage "https://github.com/stephanosio/zephyr-crosstool-ng"
-  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.2/zephyr-crosstool-ng-1.24.0.2_macos-x86_64_xtensa-intel_apl_adsp_zephyr-elf.tar.gz"
-  version "1.24.0.2"
-  sha256 "d0d996d39252e01703c5d19c93554f52fa8898e7740235bd4f12dd1e18209f46"
+  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_xtensa-intel_apl_adsp_zephyr-elf.tar.gz"
+  version "1.24.0.4"
+  sha256 "866c23c6ca96d64431d59d2aaa1e1e2114e4c6360b64527dac4d5c8df4a5f261"
   revision 1
 
   depends_on "python"
@@ -17,7 +17,7 @@ class ZephyrCrosstoolXtensaIntelAplAdsp < Formula
   end
 
   test do
-    expected = "(zephyr-crosstool-NG 1.24.0.2)"
+    expected = "(zephyr-crosstool-NG 1.24.0.4)"
 
     [
       "addr2line",

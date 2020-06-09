@@ -3,9 +3,9 @@ require "formula"
 class ZephyrCrosstoolNios2 < Formula
   desc "NIOS2 Cross Compiler Toolchain"
   homepage "https://github.com/stephanosio/zephyr-crosstool-ng"
-  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.2/zephyr-crosstool-ng-1.24.0.2_macos-x86_64_nios2-zephyr-elf.tar.gz"
-  version "1.24.0.2"
-  sha256 "85a8ed021866c1a1ef42ae53d002cb58d8729d8a53405a5215610ad6a3f00098"
+  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_nios2-zephyr-elf.tar.gz"
+  version "1.24.0.4"
+  sha256 "0b655e8a1d0980149a8048eb8b332fb8ca91d4d8b7ed7b8e140d528af3aaaa0d"
   revision 1
 
   depends_on "python"
@@ -17,7 +17,7 @@ class ZephyrCrosstoolNios2 < Formula
   end
 
   test do
-    expected = "(zephyr-crosstool-NG 1.24.0.2)"
+    expected = "(zephyr-crosstool-NG 1.24.0.4)"
 
     [
       "addr2line",

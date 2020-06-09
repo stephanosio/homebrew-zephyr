@@ -3,9 +3,9 @@ require "formula"
 class ZephyrCrosstoolRiscv < Formula
   desc "RISC-V Cross Compiler Toolchain"
   homepage "https://github.com/stephanosio/zephyr-crosstool-ng"
-  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.2/zephyr-crosstool-ng-1.24.0.2_macos-x86_64_riscv64-zephyr-elf.tar.gz"
-  version "1.24.0.2"
-  sha256 "472f204a3c89e5e8db9b46931a20d1f1df1f3526de6e5bf5912b1fa7106294f8"
+  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_riscv64-zephyr-elf.tar.gz"
+  version "1.24.0.4"
+  sha256 "7a4b7d663ebe115e9acd6bacebb11039ae54d9ef58331fcabd8f1a59b3d0fbaf"
   revision 1
 
   depends_on "python"
@@ -17,7 +17,7 @@ class ZephyrCrosstoolRiscv < Formula
   end
 
   test do
-    expected = "(zephyr-crosstool-NG 1.24.0.2)"
+    expected = "(zephyr-crosstool-NG 1.24.0.4)"
 
     [
       "addr2line",

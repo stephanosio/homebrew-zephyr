@@ -3,9 +3,9 @@ require "formula"
 class ZephyrCrosstoolArc < Formula
   desc "ARC Cross Compiler Toolchain"
   homepage "https://github.com/stephanosio/zephyr-crosstool-ng"
-  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.2/zephyr-crosstool-ng-1.24.0.2_macos-x86_64_arc-zephyr-elf.tar.gz"
-  version "1.24.0.2"
-  sha256 "b9f7e53139f193bd868893fb00256ff0d13aab62db1ffc3e1abed14213aa0691"
+  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_arc-zephyr-elf.tar.gz"
+  version "1.24.0.4"
+  sha256 "1df19978721da57313c7393f2c38d6329c9a8737d443e0c0be292ea78c01116f"
   revision 1
 
   depends_on "python"
@@ -17,7 +17,7 @@ class ZephyrCrosstoolArc < Formula
   end
 
   test do
-    expected = "(zephyr-crosstool-NG 1.24.0.2)"
+    expected = "(zephyr-crosstool-NG 1.24.0.4)"
 
     [
       "addr2line",

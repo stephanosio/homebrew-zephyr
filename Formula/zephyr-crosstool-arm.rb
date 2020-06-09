@@ -3,9 +3,9 @@ require "formula"
 class ZephyrCrosstoolArm < Formula
   desc "ARM AArch32 (Cortex-A/R/M) Cross Compiler Toolchain"
   homepage "https://github.com/stephanosio/zephyr-crosstool-ng"
-  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.2/zephyr-crosstool-ng-1.24.0.2_macos-x86_64_arm-zephyr-eabi.tar.gz"
-  version "1.24.0.2"
-  sha256 "d4de6252c9766801ef8ac4832650b4affbb2a035adceb34c131d6a08a8246384"
+  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_arm-zephyr-eabi.tar.gz"
+  version "1.24.0.4"
+  sha256 "e4504f4f0af164e9fc8be614f98e3c9dcab5e7071dca9df1258ad59352257778"
   revision 1
 
   depends_on "python"
@@ -17,7 +17,7 @@ class ZephyrCrosstoolArm < Formula
   end
 
   test do
-    expected = "(zephyr-crosstool-NG 1.24.0.2)"
+    expected = "(zephyr-crosstool-NG 1.24.0.4)"
 
     [
       "addr2line",

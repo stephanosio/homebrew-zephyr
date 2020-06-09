@@ -3,9 +3,9 @@ require "formula"
 class ZephyrCrosstoolSparc < Formula
   desc "SPARC Cross Compiler Toolchain"
   homepage "https://github.com/stephanosio/zephyr-crosstool-ng"
-  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.2/zephyr-crosstool-ng-1.24.0.2_macos-x86_64_sparc-zephyr-elf.tar.gz"
-  version "1.24.0.2"
-  sha256 "0216c9c276575a49c5506d3910602fa0543812358df662b605c9e196eee7a407"
+  url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_sparc-zephyr-elf.tar.gz"
+  version "1.24.0.4"
+  sha256 "deed77f333d579c114fb876892c66d191a4fc33b0fc79c0d2cdd28bb36ce9c17"
   revision 1
 
   depends_on "python"
@@ -17,7 +17,7 @@ class ZephyrCrosstoolSparc < Formula
   end
 
   test do
-    expected = "(zephyr-crosstool-NG 1.24.0.2)"
+    expected = "(zephyr-crosstool-NG 1.24.0.4)"
 
     [
       "addr2line",
