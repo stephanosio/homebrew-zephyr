@@ -3,9 +3,9 @@ require "formula"
 class ZephyrQemu < Formula
   desc "Zephyr QEMU Target Platform Emulator"
   homepage "https://github.com/stephanosio/zephyr-qemu"
-  url "https://github.com/stephanosio/zephyr-qemu/releases/download/zephyr-qemu-v5.0.0.0/zephyr-qemu-v5.0.0.0_macos-x86_64.tar.gz"
-  version "5.0.0.0"
-  sha256 "5caba3dd163e5d50ddd7011271308aa2fa00c588c76ffb1b7a3688b20a435043"
+  url "https://github.com/stephanosio/zephyr-qemu/releases/download/zephyr-qemu-v5.0.0.1/zephyr-qemu-v5.0.0.1_macos-x86_64.tar.gz"
+  version "5.0.0.1"
+  sha256 "917a769a1c9dd9e4889e3a388f20b36d0be088fbcdc97a7ba0a3207a23b513d0"
   revision 1
 
   depends_on "gettext"
