@@ -9,7 +9,6 @@ class ZephyrCrosstoolXtensaIntelS1000 < Formula
   revision 2
 
   depends_on "boost"
-  depends_on "python"
   depends_on "xz"
 
   def install

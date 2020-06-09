@@ -9,7 +9,6 @@ class ZephyrCrosstoolXtensaIntelBdwAdsp < Formula
   revision 2
 
   depends_on "boost"
-  depends_on "python"
   depends_on "xz"
 
   def install
