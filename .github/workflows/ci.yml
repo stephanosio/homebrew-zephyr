@@ -17,7 +17,7 @@ jobs:
 
     - name: Audit formulae
       run: |
-        for f in $(ls Formula/*.rb); do
+        for f in $(ls Formula/*.rb | grep -v 'zephyr-crosstool\.rb'); do
           brew audit $f
         done
 
@@ -37,7 +37,7 @@ jobs:
 
     - name: Test formulae
       run: |
-        for f in $(ls Formula/*.rb); do
+        for f in $(ls Formula/*.rb | grep -v 'zephyr-crosstool\.rb'); do
           brew install -v $f
           brew test -v $f
           brew uninstall $f
