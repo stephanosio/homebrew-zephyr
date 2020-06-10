@@ -16,7 +16,8 @@ brew tap stephanosio/homebrew-zephyr
 
 ### Install packages
 ```sh
-brew install (package name)
+brew install zephyr-crosstool
+brew install zephyr-qemu
 ```
 
 ## Package List
