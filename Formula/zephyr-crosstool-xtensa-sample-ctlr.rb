@@ -1,6 +1,6 @@
 require "formula"
 
-class ZephyrCrosstoolXtensaSampleController < Formula
+class ZephyrCrosstoolXtensaSampleCtlr < Formula
   desc "Xtensa Cross Compiler Toolchain"
   homepage "https://github.com/stephanosio/zephyr-crosstool-ng"
   url "https://github.com/stephanosio/zephyr-crosstool-ng/releases/download/zephyr-crosstool-ng-1.24.0.4/zephyr-crosstool-ng-1.24.0.4_macos-x86_64_xtensa-sample_controller_zephyr-elf.tar.gz"
